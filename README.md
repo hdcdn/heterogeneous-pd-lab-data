@@ -16,7 +16,8 @@
 
 ## 文档
 
-- [REPORT.md](REPORT.md)：13 章完整整理（含 8 条引用陷阱、与我们四机 GB10 实测的对照）
+- [REPORT.md](REPORT.md)：完整整理（14 个实验、7 条引用陷阱、与我们四机 GB10 实测的对照）
+- [APPENDIX.md](APPENDIX.md)：**11 份 CSV 的全部行、全部列**逐文件展开
 - `data/`：11 份原始 CSV
 
 ## 引用陷阱（摘要）
