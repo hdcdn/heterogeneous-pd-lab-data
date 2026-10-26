@@ -1,0 +1,11 @@
+version,architecture,configuration,device,model,quantization,prompt_tokens,output_tokens,ttft_s,prefill_tok_s,decode_tok_s,handoff_tokens,handoff_mib,measurement,disclosure
+v1.0,independent-pd,ai-max-395-only,AI Max+ 395 / Radeon 8060S,9B,Q6_K,5064,128,5.879,861.55,30.24,,,server-second-run,public
+v1.0,independent-pd,pd-first-512,RTX 3060 + AI Max+ 395,9B,Q6_K,5064,128,5.720,886.62,30.22,512,,server-second-run,public
+v1.0,independent-pd,pd-first-2048,RTX 3060 + AI Max+ 395,9B,Q6_K,5064,128,5.077,999.16,30.18,2048,,server-second-run,public
+v1.0,independent-pd,full-pd,RTX 3060 + AI Max+ 395,9B,Q6_K,5064,128,3.496,1452.29,30.28,5063,208.57,server-second-run,public
+v2-baseline,fused-layer,rtx-3060-only,RTX 3060 12GB,9B,Q6_K,5064,128,,1589.00,43.87,,,llama-bench-pp-tg,standalone-baseline
+v2-baseline,fused-layer,ai-max-395-only,AI Max+ 395 / Radeon 8060S,9B,Q6_K,5064,128,,970.00,31.27,,,llama-bench-pp-tg,standalone-baseline
+v2.1,fused-layer,first-fused-pipeline,RTX 3060 + AI Max+ 395,9B,Q6_K,5064,128,,1865.08,,,,llama-bench-pp,public-label-no-internal-allocation
+v2.2,fused-layer,overlap-refinement,RTX 3060 + AI Max+ 395,9B,Q6_K,5064,128,,1893.87,,,,llama-bench-pp,public-label-no-internal-allocation
+v2.3,fused-layer,balance-refinement,RTX 3060 + AI Max+ 395,9B,Q6_K,5064,128,,1999.51,37.16,,,llama-bench-pp-tg,public-label-no-internal-allocation
+v2.4,fused-layer,final-calibrated-pipeline,RTX 3060 + AI Max+ 395,9B,Q6_K,5064,128,,2129.69,50.73,,,llama-bench-pp-tg,public-label-no-internal-allocation
